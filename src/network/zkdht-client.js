@@ -277,7 +277,7 @@ class ZkDHTClient {
     }
 
     generateQueryId() {
-        return 'q_' + Math.random().toString(36).substring(2, 15);
+        return 'q_' + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296).toString(36).substring(2, 15);
     }
 
     // Development fallback: Generate mock content for ZHTP URLs
