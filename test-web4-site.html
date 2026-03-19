@@ -378,7 +378,7 @@ function navigateWeb4(path) {
         function createWebsiteFiles() {
             const output = document.getElementById('packageOutput');
             output.style.display = 'block';
-            output.innerHTML = '<span class="info">📦 Packaging website files...</span>\n';
+            output.textContent = '<span class="info">📦 Packaging website files...</span>\n';
 
             // Collect website data
             websiteData = {
@@ -414,10 +414,10 @@ function navigateWeb4(path) {
         async function deployWebsiteContract() {
             const output = document.getElementById('deployOutput');
             output.style.display = 'block';
-            output.innerHTML = '<span class="info">🚀 Deploying smart contract to ZHTP blockchain...</span>\n';
+            output.textContent = '<span class="info">🚀 Deploying smart contract to ZHTP blockchain...</span>\n';
 
             if (!websiteData.domain) {
-                output.innerHTML = '<span class="error">❌ Please package website files first!</span>\n';
+                output.textContent = '<span class="error">❌ Please package website files first!</span>\n';
                 return;
             }
 
@@ -492,7 +492,7 @@ function navigateWeb4(path) {
         async function storeInDHT() {
             const output = document.getElementById('storeOutput');
             output.style.display = 'block';
-            output.innerHTML = '<span class="info">💾 Storing content in DHT network...</span>\n';
+            output.textContent = '<span class="info">💾 Storing content in DHT network...</span>\n';
 
             try {
                 // Simulate storing each file in DHT
@@ -519,10 +519,10 @@ function navigateWeb4(path) {
             const testUrl = document.getElementById('testUrl').value;
             
             output.style.display = 'block';
-            output.innerHTML = '<span class="info">🧪 Testing Web4 website...</span>\n';
+            output.textContent = '<span class="info">🧪 Testing Web4 website...</span>\n';
 
             if (!contractId) {
-                output.innerHTML = '<span class="error">❌ Please deploy smart contract first!</span>\n';
+                output.textContent = '<span class="error">❌ Please deploy smart contract first!</span>\n';
                 return;
             }
 
@@ -555,7 +555,7 @@ function navigateWeb4(path) {
             // Create a preview with inline styles
             const previewContent = indexContent.replace('</head>', `<style>${styleContent}</style></head>`);
             
-            preview.innerHTML = `
+            preview.textContent = `
                 <iframe srcdoc="${previewContent.replace(/"/g, '&quot;')}" 
                         style="width: 100%; height: 500px; border: none; border-radius: 8px;">
                 </iframe>
