@@ -138,7 +138,7 @@ export class BiometricVerifier {
     }
 
     generateSessionId() {
-        return 'bio_' + Math.random().toString(36).substr(2, 16) + Date.now().toString(36);
+        return 'bio_' + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296).toString(36).substr(2, 16) + Date.now().toString(36);
     }
 
     generateLivenessChallenges() {
@@ -152,10 +152,10 @@ export class BiometricVerifier {
 
         // Return 2-3 random challenges
         const selectedChallenges = [];
-        const numChallenges = 2 + Math.floor(Math.random() * 2);
+        const numChallenges = 2 + Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 2);
         
         for (let i = 0; i < numChallenges; i++) {
-            const challenge = challenges[Math.floor(Math.random() * challenges.length)];
+            const challenge = challenges[Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * challenges.length)];
             if (!selectedChallenges.find(c => c.type === challenge.type)) {
                 selectedChallenges.push(challenge);
             }
@@ -359,7 +359,7 @@ export class BiometricVerifier {
         // Simulate eye movement detection
         await new Promise(resolve => setTimeout(resolve, 100));
         
-        const score = 0.7 + Math.random() * 0.3;
+        const score = 0.7 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 0.3;
         return {
             type: 'eye_movement',
             passed: score > 0.6,
@@ -372,7 +372,7 @@ export class BiometricVerifier {
         // Simulate face movement detection
         await new Promise(resolve => setTimeout(resolve, 100));
         
-        const score = 0.8 + Math.random() * 0.2;
+        const score = 0.8 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 0.2;
         return {
             type: 'face_movement',
             passed: score > 0.6,
@@ -417,7 +417,7 @@ export class BiometricVerifier {
         // Simulate depth/3D checking
         await new Promise(resolve => setTimeout(resolve, 150));
         
-        const score = 0.75 + Math.random() * 0.25;
+        const score = 0.75 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 0.25;
         return {
             type: 'depth_check',
             passed: score > 0.6,
@@ -473,7 +473,7 @@ export class BiometricVerifier {
         const landmarks = face.landmarks || this.generateMockLandmarks();
         
         return {
-            eyeSize: 15 + Math.random() * 10,
+            eyeSize: 15 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 10,
             eyeShape: 'oval',
             eyeSpacing: Math.abs(landmarks.leftEye.x - landmarks.rightEye.x),
             eyeAngle: Math.atan2(
@@ -485,26 +485,26 @@ export class BiometricVerifier {
 
     async extractNoseFeatures(face) {
         return {
-            noseWidth: 8 + Math.random() * 6,
-            noseLength: 12 + Math.random() * 8,
-            nostrilRatio: 0.6 + Math.random() * 0.4
+            noseWidth: 8 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 6,
+            noseLength: 12 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 8,
+            nostrilRatio: 0.6 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 0.4
         };
     }
 
     async extractMouthFeatures(face) {
         return {
-            mouthWidth: 25 + Math.random() * 15,
-            lipThickness: 3 + Math.random() * 4,
-            mouthCurvature: -0.1 + Math.random() * 0.2
+            mouthWidth: 25 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 15,
+            lipThickness: 3 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 4,
+            mouthCurvature: -0.1 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 0.2
         };
     }
 
     async extractTextureFeatures(face, imageData) {
         // Extract texture patterns (simplified)
         return {
-            skinTexture: Math.random() * 100,
-            wrinklePattern: Math.random() * 50,
-            blemishCount: Math.floor(Math.random() * 5)
+            skinTexture: (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 100,
+            wrinklePattern: (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 50,
+            blemishCount: Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 5)
         };
     }
 
