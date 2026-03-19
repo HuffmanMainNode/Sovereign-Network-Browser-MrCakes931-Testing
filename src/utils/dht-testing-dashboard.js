@@ -156,7 +156,7 @@ class DhtTestingDashboard {
      * Test node discovery functionality
      */
     async testNodeDiscovery(contentKey, maxNodes = 10) {
-        console.log(` Testing node discovery for content key: ${contentKey?.substring(0, 16) || 'auto-generated'}...`);
+        // [AUDIT] Sensitive log removed
         
         if (!contentKey) {
             contentKey = await this.urlUtils.hashString(`test_content_${Date.now()}`);
