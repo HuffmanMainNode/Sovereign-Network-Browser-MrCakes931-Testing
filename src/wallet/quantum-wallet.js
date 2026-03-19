@@ -176,7 +176,7 @@ export class QuantumWallet {
     }
 
     generateWalletId() {
-        return 'wallet_' + Math.random().toString(36).substr(2, 16) + Date.now().toString(36);
+        return 'wallet_' + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296).toString(36).substr(2, 16) + Date.now().toString(36);
     }
 
     async getWalletData() {
@@ -352,7 +352,7 @@ export class QuantumWallet {
     }
 
     generateTransactionId() {
-        return 'tx_' + Math.random().toString(36).substr(2, 20) + Date.now().toString(36);
+        return 'tx_' + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296).toString(36).substr(2, 20) + Date.now().toString(36);
     }
 
     isValidZhtpAddress(address) {
