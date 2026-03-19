@@ -262,14 +262,14 @@
                         const data = await response.json();
                         this.log(' Successfully connected to ZHTP node', 'success');
                         this.log(`📊 DHT Status: ${JSON.stringify(data)}`, 'info');
-                        document.getElementById('nodeStatus').innerHTML = ' Connected to ZHTP node - Web4 DHT ready';
+                        document.getElementById('nodeStatus').textContent = ' Connected to ZHTP node - Web4 DHT ready';
                         document.getElementById('nodeConnections').textContent = '1';
                     } else {
                         throw new Error(`Status: ${response.status}`);
                     }
                 } catch (error) {
                     this.log(`❌ ZHTP node connection failed: ${error.message}`, 'error');
-                    document.getElementById('nodeStatus').innerHTML = '❌ ZHTP node offline - Testing in simulation mode';
+                    document.getElementById('nodeStatus').textContent = '❌ ZHTP node offline - Testing in simulation mode';
                 }
             }
             
@@ -540,7 +540,7 @@
         };
         
         window.clearLog = function() {
-            document.getElementById('logOutput').innerHTML = '';
+            document.getElementById('logOutput').textContent = '';
             contractsApi.log('🧹 Log cleared - Ready for new operations');
         };
         
