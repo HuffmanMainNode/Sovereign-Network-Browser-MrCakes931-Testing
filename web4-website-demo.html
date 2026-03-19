@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
         async function createWebsiteContent() {
             const output = document.getElementById('content-output');
             output.style.display = 'block';
-            output.innerHTML = '<div class="info">Creating website content...</div>';
+            output.textContent = '<div class="info">Creating website content...</div>';
 
             // Show the content that will be stored
             let contentHtml = '<div class="success"> Website content created!</div>';
@@ -177,13 +177,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>`;
             });
 
-            output.innerHTML = contentHtml;
+            output.textContent = contentHtml;
         }
 
         async function deployWebsiteContract() {
             const output = document.getElementById('contract-output');
             output.style.display = 'block';
-            output.innerHTML = '<div class="info">Deploying Web4 smart contract...</div>';
+            output.textContent = '<div class="info">Deploying Web4 smart contract...</div>';
 
             try {
                 // Create the Web4 website smart contract
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (response.ok) {
                     const result = await response.json();
-                    output.innerHTML = `
+                    output.textContent = `
                         <div class="success"> Web4 contract deployed successfully!</div>
                         <div class="code">
                             Contract ID: ${result.contract_id || 'mysite_web4_' + Date.now()}<br>
@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
             } catch (error) {
-                output.innerHTML = `
+                output.textContent = `
                     <div class="error">❌ Contract deployment failed:</div>
                     <div class="code">${error.message}</div>
                     <p class="info">Note: This is a demo - the contract structure is created but may need the ZHTP node to be fully running for deployment.</p>
@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
         async function storeContentInDHT() {
             const output = document.getElementById('dht-output');
             output.style.display = 'block';
-            output.innerHTML = '<div class="info">Storing content in DHT network...</div>';
+            output.textContent = '<div class="info">Storing content in DHT network...</div>';
 
             try {
                 let storedFiles = [];
@@ -294,10 +294,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 resultHtml += '<p class="info"> Content is now distributed across the ZHTP DHT network and can be accessed by the smart contract!</p>';
-                output.innerHTML = resultHtml;
+                output.textContent = resultHtml;
 
             } catch (error) {
-                output.innerHTML = `
+                output.textContent = `
                     <div class="error">❌ DHT storage failed:</div>
                     <div class="code">${error.message}</div>
                 `;
@@ -307,11 +307,11 @@ document.addEventListener('DOMContentLoaded', function() {
         async function loadWeb4Website() {
             const output = document.getElementById('website-output');
             output.style.display = 'block';
-            output.innerHTML = '<div class="info">Loading Web4 website...</div>';
+            output.textContent = '<div class="info">Loading Web4 website...</div>';
 
             // Simulate the Web4 loading process
             setTimeout(() => {
-                output.innerHTML = `
+                output.textContent = `
                     <div class="success">🌐 Web4 Website Loaded Successfully!</div>
                     <div class="code">
                         URL: zhtp://mysite.zhtp/<br>
@@ -339,7 +339,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const output = document.getElementById('navigation-output');
             output.style.display = 'block';
             
-            output.innerHTML = `
+            output.textContent = `
                 <div class="info">Navigating to: ${url}</div>
                 <div class="code">
                     1. Parsing ZHTP URL: ${url}<br>
