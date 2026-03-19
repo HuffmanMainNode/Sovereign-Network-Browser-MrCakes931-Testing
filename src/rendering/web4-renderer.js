@@ -44,7 +44,7 @@ class Web4PageRenderer {
             this.currentPage = pageData;
             
             // Clear container
-            this.container.innerHTML = '';
+            this.container.textContent = '';
             
             // Create page wrapper
             const pageWrapper = document.createElement('div');
@@ -87,7 +87,7 @@ class Web4PageRenderer {
     createPageHeader(pageData) {
         const header = document.createElement('div');
         header.className = 'page-header';
-        header.innerHTML = `
+        header.textContent = `
             <div class="page-title-section">
                 <h1 class="page-title">${pageData.title}</h1>
                 <div class="page-meta">
@@ -107,7 +107,7 @@ class Web4PageRenderer {
     createPageFooter(pageData) {
         const footer = document.createElement('div');
         footer.className = 'page-footer';
-        footer.innerHTML = `
+        footer.textContent = `
             <div class="page-info">
                 <span>Content Hash: ${pageData.metadata.contentHash.substring(0, 16)}...</span>
                 <span>Created: ${new Date(pageData.metadata.created).toLocaleDateString()}</span>
@@ -138,7 +138,7 @@ class Web4PageRenderer {
     renderBalanceOverview(component) {
         const element = document.createElement('div');
         element.className = 'balance-overview-component';
-        element.innerHTML = `
+        element.textContent = `
             <div class="balance-card">
                 <h3>💰 Total Balance</h3>
                 <div class="balance-amount">
@@ -167,7 +167,7 @@ class Web4PageRenderer {
             `;
         }).join('');
         
-        element.innerHTML = `
+        element.textContent = `
             <div class="actions-grid">
                 ${actionButtons}
             </div>
@@ -193,7 +193,7 @@ class Web4PageRenderer {
             </div>
         `).join('');
         
-        element.innerHTML = `
+        element.textContent = `
             <h3>📊 Your Assets</h3>
             <div class="asset-grid">
                 ${assetItems}
@@ -217,7 +217,7 @@ class Web4PageRenderer {
             </div>
         `).join('');
         
-        element.innerHTML = `
+        element.textContent = `
             <h3> Recent Transactions</h3>
             <div class="transaction-list">
                 ${txItems}
@@ -231,7 +231,7 @@ class Web4PageRenderer {
         const element = document.createElement('div');
         element.className = 'governance-stats-component';
         
-        element.innerHTML = `
+        element.textContent = `
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-value">${component.data.totalProposals}</div>
@@ -300,7 +300,7 @@ class Web4PageRenderer {
             `;
         }).join('');
         
-        element.innerHTML = `
+        element.textContent = `
             <h3>🗳️ Active Proposals</h3>
             <div class="proposals-list">
                 ${proposalItems}
@@ -319,7 +319,7 @@ class Web4PageRenderer {
             return `<button class="composer-btn" onclick="window.browser?.addToPost('${feature}')">${icons[feature]}</button>`;
         }).join('');
         
-        element.innerHTML = `
+        element.textContent = `
             <div class="composer-card">
                 <textarea class="post-input" placeholder="${component.placeholder}" id="postTextarea"></textarea>
                 <div class="composer-actions">
@@ -364,7 +364,7 @@ class Web4PageRenderer {
             </div>
         `).join('');
         
-        element.innerHTML = `<div class="feed-posts">${feedPosts}</div>`;
+        element.textContent = `<div class="feed-posts">${feedPosts}</div>`;
         return element;
     }
 
@@ -372,7 +372,7 @@ class Web4PageRenderer {
     renderHeader(component) {
         const element = document.createElement('div');
         element.className = 'header-component';
-        element.innerHTML = `
+        element.textContent = `
             <h2>${component.title}</h2>
             ${component.subtitle ? `<p class="subtitle">${component.subtitle}</p>` : ''}
         `;
@@ -382,14 +382,14 @@ class Web4PageRenderer {
     renderContent(component) {
         const element = document.createElement('div');
         element.className = 'content-component';
-        element.innerHTML = component.html;
+        element.textContent = component.html;
         return element;
     }
 
     renderUnknownComponent(componentData) {
         const element = document.createElement('div');
         element.className = 'unknown-component';
-        element.innerHTML = `
+        element.textContent = `
             <div class="component-placeholder">
                 <h4>Unknown Component: ${componentData.type}</h4>
                 <p>This component type is not yet supported.</p>
@@ -405,7 +405,7 @@ class Web4PageRenderer {
     renderErrorComponent(componentType, error) {
         const element = document.createElement('div');
         element.className = 'error-component';
-        element.innerHTML = `
+        element.textContent = `
             <div class="component-error">
                 <h4>❌ Error rendering ${componentType}</h4>
                 <p>${error.message}</p>
@@ -415,7 +415,7 @@ class Web4PageRenderer {
     }
 
     renderErrorPage(error) {
-        this.container.innerHTML = `
+        this.container.textContent = `
             <div class="error-page">
                 <h1>❌ Page Load Error</h1>
                 <p>Failed to load Web4 page: ${error.message}</p>
@@ -446,7 +446,7 @@ class Web4PageRenderer {
     }
 
     clearPage() {
-        this.container.innerHTML = '';
+        this.container.textContent = '';
         this.currentPage = null;
     }
 }
