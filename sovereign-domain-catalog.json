@@ -1,0 +1,502 @@
+[
+    {
+        "id": "zone-f85fb686.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-fa40625e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-90473a6a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-e8d2cdb0.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-424061bb.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-62f44089.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-31b3e353.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-58df2f52.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-36570e3e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-ee599221.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-6d0c59cf.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-e9381600.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-20e3fdd9.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-b9548281.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-5d5ce55a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-d92a7946.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-7c1a04c3.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-fd32c6a1.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-4d1c3c99.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-8d0436f9.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-1f078aaf.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-5e6ed4ad.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-07b71d8a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-49750ae8.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-a64dd1bd.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-cc1fad05.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-e2f4e744.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-eef25cda.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-f26077dc.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-e9debdf0.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-21f158bb.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-e86990f5.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-22ac4369.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-2f3ac77f.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-94d6f970.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-ed8da6e7.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-8ec88a17.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-700e1a68.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-fd0dcd3d.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-59e86f5a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-0c2f992b.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-740395b1.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-1335024a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-89804bba.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-653fb1e5.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-58696b06.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-3d74f124.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-88c0bc2c.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-02a8b776.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-f95ea0b6.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-ceb2aa66.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-cb6ea58e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-7d83758d.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-182055ee.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-17821daa.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-7a9078aa.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-42995798.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-5cb739c0.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-fcf94079.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-c0fd0d8d.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-b5e8b86a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-bdf5a2fb.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-1a20e13e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-1ba9a1c3.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-349ac37e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-f810ebc6.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-77cb1941.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-1f3c405d.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-8f40f25a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-eae4a499.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-c8a849ca.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-be73d9b0.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-e695a642.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-9fcf7a20.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-525ec930.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-034fc29e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-c453f22c.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-66749435.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-11336b97.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-ca8b937c.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-16df672d.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-259f188e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-a15b9332.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-3715afac.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-67c8fca9.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-6bec93c3.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-19cf675e.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-c434aff0.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-8fe3959f.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-c2e5a9c9.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-1a325b50.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-45b54fae.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-5e115fff.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-a026cdce.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-b5ccec65.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-c8a81c6a.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-9ab60b77.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-9e038ab7.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-15769bdf.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    },
+    {
+        "id": "zone-112c860c.mrcakes.sovereign",
+        "status": "PRE-STAKED",
+        "protection": "Quantum-Resistant"
+    }
+]
