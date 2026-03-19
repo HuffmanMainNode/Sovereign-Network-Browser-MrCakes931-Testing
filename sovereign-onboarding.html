@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Sovereign Onboarding | Robert Huffman Registry</title>
+    <style>
+        :root { --neon-green: #00ff99; --dark: #050505; }
+        body { background: var(--dark); color: #fff; font-family: 'Segoe UI', sans-serif; padding: 40px; }
+        .node-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 15px; }
+        .node { border: 1px solid #333; padding: 15px; border-radius: 8px; background: #0a0a0a; transition: 0.3s; }
+        .node:hover { border-color: var(--neon-green); box-shadow: 0 0 10px var(--neon-green); }
+        .verified-badge { color: var(--neon-green); font-size: 0.7rem; font-weight: bold; border: 1px solid var(--neon-green); padding: 2px 5px; border-radius: 3px; }
+        .btn-access { background: var(--neon-green); color: #000; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>🛰️ Sovereign Onboarding: Verified Access Points</h1>
+    <p>Select a pre-staked, hardened domain to begin your presence on the Sovereign Web.</p>
+    <div class='node-grid' id='mapView'></div>
+    <script>
+        async function renderMap() {
+            const resp = await fetch('verified-sovereign-network-map.json');
+            const data = await resp.json();
+            const view = document.getElementById('mapView');
+            data.access_points.forEach(ap => {
+                const el = document.createElement('div');
+                el.className = 'node';
+                el.innerHTML = `
+                    <span class='verified-badge'>VERIFIED BY MRCAKES931</span>
+                    <h4>${ap.dns}</h4>
+                    <code>${ap.ip_shadow}</code>
+                    <br><button class='btn-access' onclick="alert('Onboarding to node...')">INITIALIZE ACCESS</button>
+                `;
+                view.appendChild(el);
+            });
+        }
+        renderMap();
+    </script>
+</body>
+</html>
