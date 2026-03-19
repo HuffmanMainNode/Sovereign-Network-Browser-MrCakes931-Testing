@@ -425,7 +425,7 @@
                 
                 const contractsList = document.getElementById('contracts-list');
                 if (contracts.length === 0) {
-                    contractsList.innerHTML = '<div class="status info">No contracts found in DHT network</div>';
+                    contractsList.textContent = '<div class="status info">No contracts found in DHT network</div>';
                     log(' No contracts found in DHT network');
                 } else {
                     let html = `<div class="status success">Found ${contracts.length} contracts in DHT network:</div>`;
@@ -442,14 +442,14 @@
                         `;
                     });
                     
-                    contractsList.innerHTML = html;
+                    contractsList.textContent = html;
                     log(` Found ${contracts.length} contracts in DHT network`);
                 }
                 
             } catch (error) {
                 log(`❌ Failed to list contracts: ${error.message}`);
                 const contractsList = document.getElementById('contracts-list');
-                contractsList.innerHTML = '<div class="status error">Failed to load contracts from DHT</div>';
+                contractsList.textContent = '<div class="status error">Failed to load contracts from DHT</div>';
             }
         }
         
@@ -537,7 +537,7 @@
         }
         
         function clearLogs() {
-            document.getElementById('logs').innerHTML = '';
+            document.getElementById('logs').textContent = '';
             operationCount = 0;
             document.getElementById('progress-bar').style.width = '0%';
             log('🧹 Logs cleared');
