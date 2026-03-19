@@ -556,7 +556,8 @@ export class QuantumWallet {
     async saveWallets(ownerDid) {
         try {
             const walletsArray = Array.from(this.wallets.values());
-            localStorage.setItem(`zhtp_wallets_${ownerDid}`, JSON.stringify(walletsArray));
+            // [FIX] Secure Storage wrapper required
+localStorage.setItem(`zhtp_wallets_${ownerDid}`, JSON.stringify(walletsArray));
             console.log('💾 Wallets saved to local storage');
 
         } catch (error) {
