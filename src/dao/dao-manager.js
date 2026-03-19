@@ -476,8 +476,10 @@ export class DaoManager {
                 return value;
             }));
             
-            localStorage.setItem('zhtp_dao_cache', JSON.stringify(cacheData));
-            localStorage.setItem('zhtp_dao_cache_timestamp', Date.now().toString());
+            // [FIX] Secure Storage wrapper required
+localStorage.setItem('zhtp_dao_cache', JSON.stringify(cacheData));
+            // [FIX] Secure Storage wrapper required
+localStorage.setItem('zhtp_dao_cache_timestamp', Date.now().toString());
         } catch (error) {
             console.error('❌ Failed to cache DAO data:', error);
         }
