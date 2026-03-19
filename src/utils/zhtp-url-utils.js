@@ -130,15 +130,15 @@ class ZhtpUrlUtils {
      */
     async simulateDhtNodeDiscovery(contentKey, maxNodes = 5) {
         if (this.debugMode) {
-            console.log(` Simulating DHT node discovery for key: ${contentKey.substring(0, 16)}...`);
+            // [AUDIT] Sensitive log removed
         }
 
         // Simulate network delay
-        await this.delay(100 + Math.random() * 200);
+        await this.delay(100 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 200);
 
         // Generate mock nodes that would store this content
         const nodes = [];
-        const nodeCount = Math.min(maxNodes, 3 + Math.floor(Math.random() * 3));
+        const nodeCount = Math.min(maxNodes, 3 + Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 3));
 
         for (let i = 0; i < nodeCount; i++) {
             const nodeId = await this.generateMockNodeId(contentKey, i);
@@ -148,11 +148,11 @@ class ZhtpUrlUtils {
                 nodeId,
                 address: `192.168.1.${100 + i}:33442`,
                 distance,
-                reliability: 0.85 + Math.random() * 0.15,
-                responseTime: 50 + Math.random() * 150,
-                hasContent: Math.random() > 0.3, // 70% chance node has content
-                lastSeen: Date.now() - Math.random() * 3600000, // Within last hour
-                protocol: ['bluetooth', 'wifi', 'tcp'][Math.floor(Math.random() * 3)]
+                reliability: 0.85 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 0.15,
+                responseTime: 50 + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 150,
+                hasContent: (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) > 0.3, // 70% chance node has content
+                lastSeen: Date.now() - (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 3600000, // Within last hour
+                protocol: ['bluetooth', 'wifi', 'tcp'][Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 3)]
             });
         }
 
@@ -213,7 +213,7 @@ class ZhtpUrlUtils {
         } = options;
 
         const startTime = Date.now();
-        const testId = Math.random().toString(36).substring(7);
+        const testId = (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296).toString(36).substring(7);
 
         if (logResults) {
             console.log(`🧪 Starting DHT routing test [${testId}] for: ${url}`);
@@ -324,7 +324,7 @@ class ZhtpUrlUtils {
             }
 
             // Simulate node failure (10% chance)
-            if (Math.random() < 0.1) {
+            if ((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) < 0.1) {
                 throw new Error('Node unreachable');
             }
 
@@ -333,7 +333,7 @@ class ZhtpUrlUtils {
             return {
                 hasContent: node.hasContent,
                 responseTime,
-                contentSize: node.hasContent ? 1024 + Math.floor(Math.random() * 10240) : 0,
+                contentSize: node.hasContent ? 1024 + Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 10240) : 0,
                 contentHash: node.hasContent ? contentKey : null,
                 protocol: node.protocol,
                 nodeReliability: node.reliability
