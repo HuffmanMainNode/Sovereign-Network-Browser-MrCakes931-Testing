@@ -444,9 +444,9 @@ ipcMain.handle('zhtp-request', async (event, requestData) => {
         
         if (uri.includes('network/stats')) {
             return {
-                connectedPeers: 15 + Math.floor(Math.random() * 10),
+                connectedPeers: 15 + Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 10),
                 totalNodes: 42,
-                meshHealth: 85 + Math.floor(Math.random() * 15),
+                meshHealth: 85 + Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 15),
                 protocol: 'zhtp-native',
                 ispBypass: true
             };
@@ -454,7 +454,7 @@ ipcMain.handle('zhtp-request', async (event, requestData) => {
         
         if (uri.includes('wallet/balance')) {
             return {
-                balance: 150000 + Math.floor(Math.random() * 50000),
+                balance: 150000 + Math.floor((crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296) * 50000),
                 currency: 'ZHTP',
                 ubiEarned: 1500,
                 stakingRewards: 2300
@@ -465,7 +465,7 @@ ipcMain.handle('zhtp-request', async (event, requestData) => {
             const domain = uri.split('/').pop();
             return {
                 domain: domain,
-                contentHash: 'Qm' + Math.random().toString(36).substring(2, 15),
+                contentHash: 'Qm' + (crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296).toString(36).substring(2, 15),
                 contentType: 'application/zhtp-app',
                 resolved: true
             };
