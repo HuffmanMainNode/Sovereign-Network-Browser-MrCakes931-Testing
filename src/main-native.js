@@ -134,7 +134,7 @@ class Web4Browser {
         const protocolIndicator = document.querySelector('.protocol-indicator');
         if (protocolIndicator) {
             const connectionInfo = this.api.getConnectionInfo();
-            protocolIndicator.innerHTML = `
+            protocolIndicator.textContent = `
                 <div class="protocol-status ${this.useNativeProtocol ? 'native' : 'legacy'}">
                     <span class="protocol-icon">${this.useNativeProtocol ? '🚀' : ''}</span>
                     <span class="protocol-text">
@@ -186,7 +186,7 @@ class Web4Browser {
     showInitializationError(error) {
         const loadingScreen = document.getElementById('loadingScreen');
         if (loadingScreen) {
-            loadingScreen.innerHTML = `
+            loadingScreen.textContent = `
                 <div class="zhtp-logo">ZHTP</div>
                 <div class="loading-text" style="color: #ff6b6b;">
                     Failed to initialize Web4 browser
@@ -206,7 +206,7 @@ class Web4Browser {
         // Update UI to show current identity
         const identityIndicator = document.querySelector('.identity-indicator');
         if (identityIndicator && this.currentIdentity) {
-            identityIndicator.innerHTML = `
+            identityIndicator.textContent = `
                 <span class="identity-icon"></span>
                 <span class="identity-text">
                     ${this.currentIdentity.displayName || 'Authenticated'}
@@ -265,7 +265,7 @@ class Web4Browser {
         const pageContent = document.getElementById('pageContent');
         if (!pageContent) return;
         
-        pageContent.innerHTML = `
+        pageContent.textContent = `
             <div class="welcome-section fade-in">
                 <h1 class="welcome-title">Welcome to Web4</h1>
                 <p class="welcome-subtitle">
@@ -389,7 +389,7 @@ class Web4Browser {
             // Load the appropriate page based on address using native ZHTP
             const pageContent = document.getElementById('pageContent');
             if (pageContent) {
-                pageContent.innerHTML = '<div style="text-align: center; padding: 4rem; color: #8a9ba8;">Loading via ZHTP...</div>';
+                pageContent.textContent = '<div style="text-align: center; padding: 4rem; color: #8a9ba8;">Loading via ZHTP...</div>';
             }
 
             switch (address) {
@@ -417,7 +417,7 @@ class Web4Browser {
                         if (resolution.contentHash) {
                             const content = await this.api.getContent(resolution.contentHash);
                             if (pageContent) {
-                                pageContent.innerHTML = content;
+                                pageContent.textContent = content;
                             }
                         } else {
                             this.showErrorPage('Domain Not Found', new Error(`Domain ${address} not found in ZDNS`));
@@ -447,7 +447,7 @@ class Web4Browser {
             
             const pageContent = document.getElementById('pageContent');
             if (pageContent) {
-                pageContent.innerHTML = `
+                pageContent.textContent = `
                     <div class="social-network">
                         <h2>🌐 ZHTP Social Network</h2>
                         <p>Zero-knowledge social media powered by ZHTP</p>
@@ -475,7 +475,7 @@ class Web4Browser {
             
             const pageContent = document.getElementById('pageContent');
             if (pageContent) {
-                pageContent.innerHTML = `
+                pageContent.textContent = `
                     <div class="whisper-messaging">
                         <h2>💬 Whisper Messaging</h2>
                         <p>Quantum-resistant private messaging</p>
@@ -496,7 +496,7 @@ class Web4Browser {
             
             const pageContent = document.getElementById('pageContent');
             if (pageContent) {
-                pageContent.innerHTML = `
+                pageContent.textContent = `
                     <div class="marketplace">
                         <h2>🛒 ZHTP Marketplace</h2>
                         <p>Decentralized commerce with automatic escrow</p>
@@ -517,7 +517,7 @@ class Web4Browser {
             
             const pageContent = document.getElementById('pageContent');
             if (pageContent) {
-                pageContent.innerHTML = `
+                pageContent.textContent = `
                     <div class="network-stats">
                         <h2>📊 ZHTP Network Statistics</h2>
                         <p>Real-time network performance via ${this.useNativeProtocol ? 'Native ZHTP' : 'Legacy Bridge'}</p>
@@ -533,7 +533,7 @@ class Web4Browser {
     async loadDeveloperTools() {
         const pageContent = document.getElementById('pageContent');
         if (pageContent) {
-            pageContent.innerHTML = `
+            pageContent.textContent = `
                 <div class="developer-tools">
                     <h2>ZHTP Developer Tools</h2>
                     <p>Build the decentralized future with ZHTP</p>
@@ -559,7 +559,7 @@ class Web4Browser {
     showRequiresIdentityPage(feature) {
         const pageContent = document.getElementById('pageContent');
         if (pageContent) {
-            pageContent.innerHTML = `
+            pageContent.textContent = `
                 <div class="requires-identity">
                     <h2> Identity Required</h2>
                     <p>Please create a ZK-DID identity to access ${feature}</p>
@@ -574,7 +574,7 @@ class Web4Browser {
     showErrorPage(title, error) {
         const pageContent = document.getElementById('pageContent');
         if (pageContent) {
-            pageContent.innerHTML = `
+            pageContent.textContent = `
                 <div class="error-page">
                     <h2>❌ ${title}</h2>
                     <p>${error.message}</p>
