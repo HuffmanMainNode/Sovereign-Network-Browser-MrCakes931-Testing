@@ -1,0 +1,25 @@
+{
+    "Project": "Sovereign Network Registrar",
+    "Owner": "Robert Huffman & B&H LTD",
+    "Lead_Auditor": "MrCakes931",
+    "Infrastructure": {
+        "Total_Nodes": 10000,
+        "Mesh_Shards": "/shards/shard-[0-19].json",
+        "Master_Manifest": "sovereign-master-registry-manifest.json"
+    },
+    "Protocols": {
+        "AI_Swarm": "src/network/sovereign-swarm-protocol.js",
+        "Self_Healing": "src/network/sovereign-healing-engine.js",
+        "Hibernation": "fort-knox-hibernation-protocol.json"
+    },
+    "Interfaces": {
+        "Main_Portal": "index.html",
+        "Marketplace": "sovereign-marketplace.html",
+        "Onboarding": "sovereign-onboarding.html"
+    },
+    "Audit_Reports": [
+        "security-audit-manifest.json",
+        "FULL_VULNERABILITY_TRACEABILITY_REPORT.json",
+        "MRCAKES931_AUDIT_CERTIFICATE.json"
+    ]
+}
